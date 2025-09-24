@@ -8,19 +8,17 @@ class Quiz:
         ]
         self.question_counter = 3
 
-    #Commentaire
-
     def respond_question(self):
         for i in range(len(self.question)):
             entered = input(self.question[i] + " ")
-            if entered != self.answer[i]:
+            while entered != self.answer[i]:
                 self.question_counter -= 1
-                print("Wrong answer")
                 if self.question_counter == 0:
                     print("Game over")
-                    break
+                    return
+                print("Wrong answer")
                 entered = input(self.question[i] + " ")
-        
+        print("Congratulations! You answered all questions correctly.")
 
-quizz = Quiz()
-quizz.respond_question()
+        quizz = Quiz()
+        quizz.respond_question()
