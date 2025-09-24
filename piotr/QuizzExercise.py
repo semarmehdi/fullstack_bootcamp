@@ -21,7 +21,7 @@ class Quiz:
                     break
                 entered = input(self.question[i] + " ")
         else:
-            print("Congratulations! You answered all questions correctly.")
+            print("Congratulations! You answered all questions not correctly.")
 
 quizz = Quiz()
 quizz.respond_question()
