@@ -7,6 +7,7 @@ class Quiz:
             "Quelle est la chanteuse la moins connue? "
         ]
         self.question_counter = 3
+        #Commentaire
 
     def respond_question(self):
         for i in range(len(self.question)):
