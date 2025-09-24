@@ -8,6 +8,8 @@ class Quiz:
         ]
         self.question_counter = 3
 
+    #Commentaire
+
     def respond_question(self):
         for i in range(len(self.question)):
             entered = input(self.question[i] + " ")
